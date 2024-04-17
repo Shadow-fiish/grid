@@ -1,0 +1,42 @@
+.start {
+    @include row;
+    margin: 0 auto;
+    margin-top: 80px;
+    min-height: 588px;
+    position: relative;
+    max-width: 1600px;
+    background-image: url(./images/unsplash_Zwrrfoh4VSM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.start__p{
+    @include fontz(96px, 900);
+    color: $back-color;
+    margin-left: 78px;
+    margin-top: 71px;
+}
+
+.start__right  {
+    @include row;
+    position: absolute;
+    bottom: 0;
+    right: 107px;
+    z-index: 2;
+    @include fontz(15px, 900);
+    background-color: $bottom-color;
+    border-radius: 37px;
+    color: $back-color;
+}
+
+.margin__p {
+    padding: 16px 22px;
+}
+
+.margin__line {
+    margin-left: 77px;
+    padding: 16px 22px;
+    margin-top: 7px;
+}

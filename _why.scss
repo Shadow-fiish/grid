@@ -1,0 +1,57 @@
+.why__h1 {
+    @include fontz(128px, 900);
+}
+
+.why__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 42px;
+    grid-row-gap: 84px;
+}
+
+.why__p {
+    padding-top: 23px;
+    padding-left: 20px;
+}
+
+.why__h2 {
+    @include fontz(38px, 900);
+}
+
+.why__h3 {
+    @include fontz (20px, 400);
+}
+
+.View_More_p {
+    text-align: center;
+    @include fontz (20px, 400);
+}
+
+.View_More_a {
+    padding-left: 5px;
+    @include fontz (20px, 900);
+    color: $bottom-color;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: $text-color;
+        cursor: pointer;
+    } 
+}
+
+.why__row {
+    @include row;
+    justify-content: center;
+}
+
+.line {
+    text-decoration: underline;
+    color: $bottom-color;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: $text-color;
+        cursor: pointer;
+    } 
+}

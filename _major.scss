@@ -1,0 +1,33 @@
+body{
+    background-color: $back-color;
+    color: $text_color;
+    font-family: $font-Satoshi;
+}
+
+a{
+    color: $text-color;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: $bottom-color;
+        cursor: pointer;
+    }
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin fontz ($s, $w) {
+    font-size: $s;
+    font-weight: $w;
+}
+
+
+.conteiner {
+    margin: 0 auto;
+    max-width: 1294px;
+    margin-bottom: 125px;
+}

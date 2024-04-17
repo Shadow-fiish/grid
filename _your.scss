@@ -1,0 +1,14 @@
+.your__row {
+    @include row;
+}
+
+.your_text {
+    @include fontz(38px, 400);
+    margin-top: 81px;
+}
+
+.your_read {
+    margin-top: 56px;
+    @include fontz(20px, 400);
+    text-decoration: underline;
+}

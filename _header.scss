@@ -1,0 +1,41 @@
+.header {
+    margin: 0 auto;
+    min-height:  70px;
+    max-width: 1294px;
+    margin-top: 32px;
+}
+.header__row{
+    @include row;
+}
+
+.header__nav {
+    @include row;
+    column-gap: 18px;
+    @include fontz (15px, 400);
+    white-space: nowrap;
+    margin-left: 94px; 
+    padding-top: 20px;
+}
+
+.header__a {
+    color: $bottom-color;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: $text-color;
+        cursor: pointer;
+    }
+    padding-top: 20px;    
+}
+
+.header__p {
+    text-decoration: underline;
+    @include fontz (15px, 400);
+}
+
+.header__line {
+    margin: 0 auto;
+    max-width: 1294px;
+    margin-top: 25px;
+    border-top: 2px solid $line-color;
+}
